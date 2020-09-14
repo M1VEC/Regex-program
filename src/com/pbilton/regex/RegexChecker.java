@@ -16,9 +16,9 @@ public class RegexChecker {
 
     public static void Regex_Checker(){
             System.out.println("Regex Tester");
-        do{
-        do{
-            System.out.println("\nEnter regex expression: ");
+            do{
+                do{
+                    System.out.println("\nEnter regex expression: ");
             regex = scanner.nextLine();
             validRegex = true;
             try
@@ -30,10 +30,9 @@ public class RegexChecker {
                 System.out.println(e.getMessage());
                 validRegex = false;
             }
-
         } while (!validRegex);
-        doneMatching = false;
 
+        doneMatching = false;
         while(!doneMatching) {
             System.out.println("Enter string: ");
             string = scanner.nextLine();
@@ -47,8 +46,8 @@ public class RegexChecker {
                     System.out.println("No match found");
             }
         }
-    } while (askAgain());
-}
+            } while (askAgain());
+    }
 
     private static boolean askAgain(){
         System.out.println("New expression: Y or N");
