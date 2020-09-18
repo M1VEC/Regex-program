@@ -35,4 +35,18 @@ public class testRegex {
         assertEquals(true, RegexExamples.validatePhoneNumber("(567) 145-7755"));
         assertEquals(false, RegexExamples.isVowel("(890)667 9956"));
     }
+
+    @Test
+    public void testSplitCapitals(){
+        assertEquals("One Two Three", RegexExamples.splitCapitals("OneTwoThree"));
+    }
+
+    @Test public void testPasswordHider() {
+        assertEquals("jdbc:mysql://sdasdasdasd:szdasdasd:dfsdfsdfsdf/sdfsdfsdf?user=root&password=*****",RegexExamples.hidePasswordInURL("jdbc:mysql://sdasdasdasd:szdasdasd:dfsdfsdfsdf/sdfsdfsdf?user=root&password=12345"));
+    }
+
+    @Test
+    public void testPhoneNumber() {
+        assertEquals("(123) 456-7890", RegexExamples.createPhoneNumber(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}));
+    }
 }
