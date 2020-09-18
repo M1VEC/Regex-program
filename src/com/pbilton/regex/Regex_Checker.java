@@ -22,8 +22,9 @@ public class Regex_Checker {
             matchFound = false;
             while(!doneMatching) {
                 string_Input();
-                if (matchFound == true)
+                if (matchFound == true){
                     System.out.println("Match Found");
+                System.out.println(matcher.group(0));}
                 else
                     System.out.println("No match found");
             }
