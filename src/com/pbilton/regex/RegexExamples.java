@@ -16,7 +16,6 @@ public class RegexExamples {
         System.out.println("3- Validate usernames and passwords");
     }
 
-
     //*************Numbers******************************
     public static boolean validatePhoneNumber(String number){
         pattern = Pattern.compile("\\((\\d){3}\\) (\\d){3}-(\\d){4}");
