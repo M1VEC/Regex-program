@@ -47,7 +47,7 @@ public class RegexRevisionPrint {
         System.out.println("\\D     Any nondigit(not 0-9)");
         System.out.println("\\s     Any whitespace character");
         System.out.println("\\S     Any character that isn't a whitespace");
-        System.out.println("\\w     Any word character(a-z, A-Z, 0-9 or _");
+        System.out.println("\\w     Any word character(a-z, A-Z, 0-9 or _)");
         System.out.println("\\W     Any character other than a word character");
     }
 

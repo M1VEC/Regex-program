@@ -17,6 +17,7 @@ public class RegexExamples {
     }
 
     //*************Numbers******************************
+
     public static boolean validatePhoneNumber(String number){
         pattern = Pattern.compile("\\((\\d){3}\\) (\\d){3}-(\\d){4}");
         matcher = pattern.matcher(number);
